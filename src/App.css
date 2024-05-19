@@ -1,5 +1,15 @@
+*:not(.rc-virtual-list-holder-inner, .rc-virtual-list-holder-inner *, .ant-input-group-wrapper, .ant-input-group-wrapper *, .ant-modal, .ant-modal *) {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.2s ease-in;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw
 }
 
 .App-logo {
@@ -32,6 +42,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

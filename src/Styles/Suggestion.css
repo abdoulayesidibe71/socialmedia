@@ -1,0 +1,15 @@
+.Suggestion{
+    min-width: 300px;
+    border: 0.5px solid rgb(203, 203, 203);
+    padding:20px;
+    border-radius: 10px;
+    margin: 10px;
+    background: white;
+}
+
+.SuggestionHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

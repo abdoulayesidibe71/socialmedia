@@ -1,0 +1,18 @@
+.Auth{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FormMainContainer{
+    min-width: 300px;
+    max-width: 700px;
+    width: 300px;
+    border: 0.5px solid rgb(203, 203, 203);
+    padding:20px;
+    border-radius: 10px
+}
+.Auth h1{
+    margin:20px
+}

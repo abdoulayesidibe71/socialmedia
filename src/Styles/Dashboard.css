@@ -1,0 +1,68 @@
+.Dashboard{
+    display: flex;
+    height:100vh;
+
+
+}
+.contentContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mainContainer{
+    width: 100%;
+
+    margin:10px;
+    border-radius: 10px;
+    border: 0.5px solid rgb(203, 203, 203);
+    background: white;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.Header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PosterList{
+    border-top:    0.5px solid rgb(203, 203, 203); ;
+    margin-top:20px;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 70px;
+}
+.PosterMoreDetail p{
+ margin: 0;
+}
+.PosterMoreDetail .ant-modal-content{
+    height: calc(90vh);
+
+}
+.posterDetailComment{
+    border-top:    0.5px solid rgb(203, 203, 203);
+    margin-top: 10px;
+
+}
+.ant-modal-body{
+    height: 100%;
+}
+.ant-input-group-wrapper{
+    height: 100% !important;
+
+}
+.ant-input-wrapper{
+    height: 100% !important;
+}
+.ant-input-affix-wrapper{
+    height: 100% !important;
+}
+
+
+.ant-tabs-content-holder{
+    height: 100%;
+    overflow: hidden;
+
+}
