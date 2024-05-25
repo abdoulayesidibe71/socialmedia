@@ -3,10 +3,15 @@ import { createSlice } from '@reduxjs/toolkit'
 export const userSlice = createSlice({
   name: 'user',
   initialState: {
+
+    //state qui sert a stocker les information de l'utilisateur
+
    UserData: null,
+   //state qui sert a stocker les information de tous les utilisateur
    AllUsers: null
   },
   reducers: {
+  
     handleUserData: (state, action) => {
       state.UserData = action.payload
     },

@@ -5,18 +5,24 @@ import { handleIsOpenPosterDetail } from "../../../redux/appLogic";
 import {CommentOutlined, LikeOutlined } from '@ant-design/icons'
 
 const PosteMoreDetailModal = () => {
+  //pour creer une instance useDispatch
+  // l'instance useDispatch permet de mettre a jour les contenue de nos states redux
   const dispatch = useDispatch();
+  // state redux pour gerer si  notre modal qui sert a afficher en detail un post est cacher ou afficher
   const IsOpenPosterDetail = useSelector(
     (state) => state.appLogic.IsOpenPosterDetail
   );
-
+// nothing
   const handleOk = () => {};
+  // fonction une fois executer met a jour le state redux IsOpenPosterDetail a "false"
+  // ce qui vas en retour cacher notre modal
   const handleCancel = () => {
     dispatch(handleIsOpenPosterDetail(false));
   };
 
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
+  //on y reviendra
   const loadMoreData = () => {
     if (loading) {
       return;

@@ -5,11 +5,13 @@ import { useDispatch, useSelector } from "react-redux";
 import axiosInstance from "../../axiosInstance";
 import { handleActiveAuth } from "../../redux/appLogic";
 
+//le composant qui sert pour confirmer le mail de l'utilisateur
+// ce composant est appeler apres l'inscription et l'envoie du code de confirmation pour le backend
 const ConfirmEmail = () => {
    const dispatch = useDispatch()
     const userData = useSelector((state) => state.user.UserData)
+  //onChange est executer pour envoyer vers le backend le code de confirmation entrer par l'utilisateur
   const onChange = (text) => {
-    console.log("onChange:", text);
     const data = {email:userData.email, confirmCode:text}
     axiosInstance.post("/confirm-email",data).then((response) => {
         console.log(response);

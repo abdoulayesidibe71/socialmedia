@@ -6,6 +6,8 @@ import { handleUserData } from "../../redux/userSlice";
 import axiosInstance from "../../axiosInstance";
 import { handleActiveAuth } from "../../redux/appLogic";
 
+//pour + de commentaire, a voir "Login"
+//composant pour permettre a l'utilisateur de se connecter
 const SignUp = () => {
   const dispatch = useDispatch()
   const onFinish = (values) => {  
@@ -20,9 +22,7 @@ const SignUp = () => {
       console.log(error);
     })
   };
-  const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
-  };
+
   return (
     <div className="">
       <h1>Inscription</h1>

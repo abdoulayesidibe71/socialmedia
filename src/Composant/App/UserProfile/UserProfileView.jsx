@@ -28,8 +28,14 @@ const items = [
     children: "Settings",
   },
 ];
+
+//UserProfileView est un Drawer qui vient de antd
+//permet d'afficher les informations detail d'un utilisateur
+//par exemple si on clique sur la profile de l'utilisateur Aboubacar, 
+//c'est le composant UserProfileView qui sera utiliser pour afficher tout les information de Aboubacar
 const UserProfileView = () => {
   const dispatch = useDispatch();
+  //state pour gere l'affichage de note Drawer
   const IsOpenUserProfileView = useSelector(
     (state) => state.appLogic.IsOpenUserProfileView
   );

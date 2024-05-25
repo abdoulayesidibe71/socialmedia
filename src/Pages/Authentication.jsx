@@ -8,14 +8,16 @@ import Login from "../Composant/Auth/Login";
 import { handleActiveAuth } from "../redux/appLogic";
 import { useDispatch, useSelector } from 'react-redux';
 import ConfirmEmail from "../Composant/Auth/ConfirmEmail";
+
+
+//Authentication est le comosant parent qui es utiliser pour la page /authentication
 const Authentication = () => {
   const dispatch = useDispatch();
-  //recuperer ActiveAUth depuis le store
+  //ActiveAuth est le state pour savoir si sur la page /authentication, c'est le composant "Login" ou le composant "SignUp" est afficher
   const ActiveAuth = useSelector(state => state.appLogic.ActiveAuth); 
   const [ActiveAuths, setActiveAuth] = useState("Connexion");
   console.log(ActiveAuth);
   return (
-    
     <div className="Auth">
       <div className="FormMainContainer">
         <Segmented
@@ -30,7 +32,6 @@ const Authentication = () => {
           }}
         />
         {/* Le composant Login s'affiche uniquement si ActiveAuth est egal a "Connexion" */}
-
         {ActiveAuth === "Connexion" && <Login />}
 
         {/* Le composant SignUp s'affiche uniquement si ActiveAuth est egal a "Inscription" */}
